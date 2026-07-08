@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>To-Do List Management System</h1>
+
+    <div class="form">
+
+        <input type="text" id="title" placeholder="Enter Task Title">
+
+        <textarea id="description" placeholder="Enter Description"></textarea>
+
+        <select id="priority">
+            <option value="">Select Priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <select id="status">
+            <option value="">Select Status</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button onclick="addTask()">Add Task</button>
+
+    </div>
+
+    <hr>
+
+    <h2>All Tasks</h2>
+
+    <div id="taskList"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
